@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS `notificação` (
   `Latitude` double DEFAULT NULL,
   `Longitude` double DEFAULT NULL,
   `Hora Notificação` time DEFAULT NULL,
+  `DataNotificacao` date DEFAULT NULL,
   `Nome da Doença` varchar(50) DEFAULT NULL,
   KEY `Login` (`LoginUsuario`),
   CONSTRAINT `Login` FOREIGN KEY (`LoginUsuario`) REFERENCES `usuário` (`Login`) ON DELETE NO ACTION ON UPDATE NO ACTION
@@ -46,3 +47,4 @@ CREATE TABLE IF NOT EXISTS `usuário` (
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+
