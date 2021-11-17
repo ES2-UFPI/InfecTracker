@@ -10,13 +10,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest test"
+    "test": "jest test",
+    "nodemon": "nodemon src/server.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
     "supertest": "^6.1.6"
   }
 }
