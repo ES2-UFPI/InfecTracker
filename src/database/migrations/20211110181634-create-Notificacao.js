@@ -1,6 +1,6 @@
 'use strict';
 
-const { SequelizeScopeError } = require("sequelize/types");
+const { SequelizeScopeError } = require("sequelize");
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
