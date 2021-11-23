@@ -3,13 +3,13 @@ const routes = require('./routes');
 const app = express();
 app.use(express.json());
 app.use(routes);
-const db = require('./db')
 require('./database')
-const port = 3306
+const port = 3333
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 // GET
 app.get('/tasks', async (req, res) => {
