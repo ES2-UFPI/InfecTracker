@@ -1,11 +1,15 @@
-const express = require('express')
-const db = require('./db')
-const app = express()
-const port = 8080
+const express = require('express');
+const routes = require('./routes');
+const app = express();
+app.use(express.json());
+app.use(routes);
+require('./database')
+const port = 3333
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
 
 // GET
 app.get('/tasks', async (req, res) => {
